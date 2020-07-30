@@ -173,7 +173,6 @@ export default {
 }
 .modal {
   width: 680px;
-  /* height: 630px; */
   height: auto;
   margin: 160px auto 0px;
   padding: 80px 80px 120px;
@@ -236,6 +235,7 @@ export default {
 }
 .list-item {
   width: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -255,7 +255,6 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   border-radius: 10px;
   border: 1px solid #647291;
   background-color: #171c27;

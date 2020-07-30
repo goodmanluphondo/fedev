@@ -156,6 +156,9 @@
   </div>
 </template>
 <style scoped>
+.project-display {
+  width: calc(100% - 360px);
+}
 .section {
   margin: 0;
   margin-bottom: 28px;
@@ -166,41 +169,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.btn {
-  flex: none;
-  display: inline-block;
-  padding: 14px 28px;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1;
-  border-radius: 10px;
-  position: relative;
-  background-color: rgba(61, 69, 88, 0.3);
-}
-.btn-gitlab {
-  margin: 0;
-  padding: 5px 20px;
-  border: 1px solid #cdddff;
-  font-size: 10px;
-  font-weight: 700;
-}
-.btn-deploy {
-  border: 1px solid #cdddff;
-  /* background-color: linear-gradient(to right, rgba(112, 123, 145, .1), rgba(61, 69, 88, .1)); */
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.btn-graphical {
-  padding: 14px 60px 14px 28px;
-}
-.btn-graphical .icon {
-  width: 13px;
-  height: 13px;
-  right: 17px;
-  position: absolute;
-  background-size: 100%;
-  background-color: transparent;
-  background-repeat: no-repeat;
 }
 .icon-pen {
   background-image: url("../assets/pen.png");
@@ -221,52 +189,6 @@
   font-size: 21px;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
-}
-.card {
-  width: 100%;
-  /* display: block; */
-  border-radius: 10px;
-  position: relative;
-}
-.card.warning {
-  border: 1px solid #ff3b70;
-  border-radius: 10px;
-}
-.card.warning::before {
-  top: 0;
-  right: -1px;
-  content: "FAILED";
-  width: 90px;
-  height: 30px;
-  line-height: 30px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  border-radius: 10px;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: #040220;
-  background: linear-gradient(to right, #ff3b70, #ff8057);
-}
-.project-card {
-  margin: 0;
-  margin-top: 80px;
-  padding: 14px;
-  padding-top: 100px;
-  text-align: center;
-  color: #cdddff;
-  background-color: #171c27;
-}
-.deployment-card {
-  width: 100%;
-  /* height: auto; */
-  display: flex;
-  padding: 30px 24px;
-  font-size: 10px;
-  font-weight: 700;
-  color: #647291;
-  justify-content: space-between;
-  background-color: #171c27;
 }
 .deployment-details {
   width: calc(50% - 5px);
@@ -294,24 +216,6 @@
   margin-bottom: 24px;
   line-height: 28px;
 }
-.avatar {
-  top: 0;
-  left: 90px;
-  z-index: 10;
-  width: 160px;
-  height: 160px;
-  display: block;
-  padding: 10px;
-  position: absolute;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #171c27;
-}
-.avatar img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-}
 .script {
   width: 100%;
   padding: 35px 40px;
@@ -325,12 +229,6 @@
 }
 .content {
   display: flex;
-}
-.archive,
-.description {
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .issues {
   width: calc(100% - 260px);

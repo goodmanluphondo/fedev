@@ -26,20 +26,60 @@
       </div>
     </div>
     <div class="project-options">
-      <a href="#" class="btn" onclick="rollback()">Rollback</a>
+      <a href="#" class="btn" @click="rollback()">Rollback</a>
       <a href="#" class="btn btn-deploy">Deploy Now</a>
     </div>
     <a href="#" class="archive">Archive Project</a>
   </div>
 </template>
-
-<style>
+<script>
+export default {
+  methods: {
+    rollback() {
+      if (!this.modal) {
+        this.$store.dispatch("displayModal");
+      }
+    }
+  },
+  computed: {
+    modal() {
+      return this.$store.state.modal;
+    }
+  }
+};
+</script>
+<style scoped>
 .project-details {
   flex: none;
   width: 340px;
   margin: 0;
   margin-right: 20px;
   text-align: center;
+  position: relative;
+}
+.avatar {
+  top: 0px;
+  left: 90px;
+  z-index: 10;
+  width: 160px;
+  height: 160px;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #171c27;
+}
+.avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.archive,
+.description {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .project-options {
   width: 100%;

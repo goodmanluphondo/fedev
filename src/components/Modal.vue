@@ -188,7 +188,7 @@ export default {
   width: 30px;
   height: 30px;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 30px;
   text-align: center;
   display: block;
@@ -254,6 +254,7 @@ export default {
 .modal-deployment {
   width: 100%;
   display: flex;
+  padding: 20px;
   justify-content: space-between;
   border-radius: 10px;
   border: 1px solid #647291;

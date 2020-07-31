@@ -21,8 +21,8 @@
           <p>
             if [-f artisan]<br />
             then<br />
-            &nbsp;&emsp;php artisan migrate --force<br />
-            &nbsp;&emsp;php artisan horizon:terminate<br />
+            <span v-html="tab"></span>php artisan migrate --force<br />
+            <span v-html="tab"></span>php artisan horizon:terminate<br />
             fi
           </p>
           <p>
@@ -32,8 +32,8 @@
           <p>
             if [-f artisan]<br />
             then<br />
-            &ensp;&ensp;php artisan migrate --force<br />
-            &ensp;&ensp;php artisan horizon:terminate<br />
+            <span v-html="tab"></span>php artisan migrate --force<br />
+            <span v-html="tab"></span>php artisan horizon:terminate<br />
             fi
           </p>
         </div>
@@ -158,6 +158,15 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      tab: "&emsp;"
+    };
+  }
+};
+</script>
 <style scoped>
 .project-display {
   width: calc(100% - 360px);

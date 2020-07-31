@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-wrapper" @click="handleModalClick()">
+  <div class="modal-wrapper" @click.self="closeModal()">
     <div v-if="currentModalScreen == 1">
       <div class="modal">
         <div class="modal-close" @click="closeModal()">&times;</div>

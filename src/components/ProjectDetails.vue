@@ -99,11 +99,17 @@ export default {
   transform: rotate(45deg);
   position: absolute;
 }
-.archive,
+.archive {
+  font-size: 10px;
+}
 .description {
   font-size: 13px;
+}
+.archive,
+.description {
   font-weight: 700;
   text-transform: uppercase;
+  color: #647291;
 }
 .project-card {
   margin: 0;

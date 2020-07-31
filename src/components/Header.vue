@@ -70,7 +70,7 @@ header {
   text-indent: -9999px;
   text-decoration: none;
   background-size: auto 30px;
-  background-image: url("../assets/logo.png");
+  background-image: url("../assets/logo.svg");
   background-repeat: no-repeat;
 }
 .menu {

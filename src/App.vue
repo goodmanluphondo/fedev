@@ -154,6 +154,7 @@ h1 {
   font-family: Montserrat, sans-serif;
 }
 h2 {
+  padding: 0;
   margin: 0;
   margin-bottom: 28px;
   font-size: 32px;

@@ -1,6 +1,6 @@
 <template>
-  <div v-if="currentModalScreen == 1">
-    <div class="modal-wrapper">
+  <div class="modal-wrapper" @click="handleModalClick()">
+    <div v-if="currentModalScreen == 1">
       <div class="modal">
         <div class="modal-close" @click="closeModal()">&times;</div>
         <div class="modal-title">
@@ -69,10 +69,8 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div v-else-if="currentModalScreen == 2">
-    <div class="modal-wrapper">
+    <div v-else-if="currentModalScreen == 2">
       <div class="modal">
         <div class="modal-close" @click="closeModal()">&times;</div>
         <div class="modal-title">
@@ -107,10 +105,8 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div v-else-if="currentModalScreen == 3">
-    <div class="modal-wrapper">
+    <div v-else-if="currentModalScreen == 3">
       <div class="modal">
         <div class="modal-close" @click="closeModal()">&times;</div>
         <div class="modal-title">
@@ -148,6 +144,9 @@ export default {
     stepForward() {
       let screen = this.currentModalScreen + 1;
       this.$store.dispatch("updateModalScreen", screen);
+    },
+    handleModalClick() {
+      console.log("you have clicked on the modal.");
     }
   },
   computed: {
@@ -188,7 +187,8 @@ export default {
   right: 20px;
   width: 30px;
   height: 30px;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
   display: block;

@@ -21,8 +21,8 @@
           <p>
             if [-f artisan]<br />
             then<br />
-            &ensp;&ensp;php artisan migrate --force<br />
-            &ensp;&ensp;php artisan horizon:terminate<br />
+            &nbsp;&emsp;php artisan migrate --force<br />
+            &nbsp;&emsp;php artisan horizon:terminate<br />
             fi
           </p>
           <p>
@@ -60,7 +60,10 @@
                   </p>
                 </div>
                 <div class="commit-results">
-                  <span class="commit-time">15:52 | 23 AUG</span>
+                  <span class="commit-time">
+                    <div>15:52 | 23 AUG</div>
+                    <div class="commit-time-icon"></div>
+                  </span>
                   <span class="commit-number">#7a7df2e</span>
                 </div>
               </div>
@@ -167,6 +170,9 @@
   width: 100%;
   height: 80px;
   display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -209,12 +215,23 @@
   background: rgba(100, 114, 145, 0.2);
 }
 .commit-time {
-  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
   margin-bottom: 24px;
   line-height: 28px;
+}
+.commit-time-icon {
+  width: 20px;
+  height: 10px;
+  display: block;
+  background-size: 20px 10px;
+  background-image: url("../assets/success-light.svg");
+  background-repeat: no-repeat;
 }
 .script {
   width: 100%;

@@ -24,10 +24,14 @@
     <div class="menu">
       <nav class="menu-links">
         <a href="#">
-          <i class="menu-icon menu-icon-notifications"></i>
+          <i class="menu-icon menu-icon-notifications">
+            <span class="menu-icon-option">2</span>
+          </i>
         </a>
         <a href="#">
-          <i class="menu-icon menu-icon-alerts"></i>
+          <i class="menu-icon menu-icon-alerts">
+            <span class="menu-icon-option menu-icon-cross">&times;</span>
+          </i>
         </a>
       </nav>
     </div>
@@ -95,17 +99,37 @@ header {
   background-image: url("../assets/unknown.png");
 }
 .menu-icon.menu-icon-notifications {
-  background-size: 30px;
-  background-image: url("../assets/notifications.png");
+  background-size: 100%;
+  background-image: url("../assets/notifications.svg");
 }
 .menu-icon.menu-icon-alerts {
-  background-size: 30px;
+  background-size: 100%;
   background-color: #11141d;
-  background-image: url("../assets/alerts.png");
+  background-image: url("../assets/alerts.svg");
 }
 .menu-icon-active {
   border: 1px solid #ff3b70;
   background-color: #11141d;
+}
+.menu-icon-option {
+  top: 10px;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  display: block;
+  z-index: 10;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  color: #171c27;
+  background-color: #cdddff;
+  position: absolute;
+}
+.menu-icon-cross {
+  font-size: 20px;
 }
 .user {
   text-align: right;

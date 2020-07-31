@@ -229,15 +229,6 @@ a {
   color: #040220;
   background: linear-gradient(to right, #ff3b70, #ff8057);
 }
-.project-card {
-  margin: 0;
-  margin-top: 80px;
-  padding: 14px;
-  padding-top: 100px;
-  text-align: center;
-  color: #cdddff;
-  background-color: #171c27;
-}
 .deployment-card {
   width: 100%;
   /* height: auto; */

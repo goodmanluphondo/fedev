@@ -3,6 +3,9 @@
     <div class="avatar">
       <img src="@/assets/1908-fixed-lte-gitlab-avatar.png" />
     </div>
+    <div class="nav-back">
+      <span class="nav-back-arrow"></span>
+    </div>
     <div class="card project-card">
       <h3>Fixed LTE</h3>
       <p class="description">Node CMS | ~/repo/fixed-wireless</p>
@@ -75,11 +78,40 @@ export default {
   height: 140px;
   border-radius: 50%;
 }
+.nav-back {
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px 20px;
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(61, 69, 88, 0.3);
+  position: relative;
+}
+.nav-back-arrow {
+  top: 18px;
+  left: 22px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  border: solid #647291;
+  border-width: 0px 0px 1px 1px;
+  transform: rotate(45deg);
+  position: absolute;
+}
 .archive,
 .description {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.project-card {
+  margin: 0;
+  padding: 14px;
+  padding-top: 100px;
+  text-align: center;
+  color: #cdddff;
+  background-color: #171c27;
 }
 .project-options {
   width: 100%;

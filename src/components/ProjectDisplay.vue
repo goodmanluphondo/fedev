@@ -243,11 +243,11 @@
   flex: 25%;
 }
 .issue-events {
-  flex: 25;
+  flex: 25%;
 }
 .issues-header {
-  padding: 0;
-  padding-bottom: 12px;
+  padding: 0 28px 12px;
+  /* padding-bottom: 12px; */
   font-size: 10px;
   font-weight: 500;
   line-height: 1;
@@ -257,6 +257,7 @@
 .issue {
   width: 100%;
   display: flex;
+  line-height: 1;
 }
 .issue {
   padding: 14px 28px;
@@ -265,7 +266,7 @@
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1;
+
   background-color: #171c27;
 }
 .totals {

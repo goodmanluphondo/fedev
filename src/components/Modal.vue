@@ -209,7 +209,7 @@ export default {
   font-size: 20px;
   font-weight: 400;
 }
-.modal-icon {
+/* .modal-icon {
   width: 90px;
   height: 90px;
   display: block;
@@ -229,6 +229,16 @@ export default {
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   position: absolute;
+} */
+.modal-icon {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-size: 100%;
+  background-image: url("../assets/tick.svg");
+  background-repeat: no-repeat;
 }
 .modal-body {
   position: relative;

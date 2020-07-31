@@ -264,7 +264,7 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .btn-graphical {
-  padding: 14px 60px 14px 28px;
+  padding: 14px 48px 14px 28px;
 }
 .btn-graphical .icon {
   width: 13px;
